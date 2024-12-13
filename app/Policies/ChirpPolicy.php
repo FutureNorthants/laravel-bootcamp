@@ -4,7 +4,6 @@ namespace App\Policies;
 
 use App\Models\Chirp;
 use App\Models\User;
-use Illuminate\Auth\Access\Response;
 
 class ChirpPolicy
 {
@@ -29,7 +28,7 @@ class ChirpPolicy
      */
     public function create(User $user): bool
     {
-        return false;
+        return true;
     }
 
     /**
